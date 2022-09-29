@@ -1,0 +1,130 @@
+.container {
+    margin: 0 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid gray;
+
+        svg {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .basic-info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem 0;
+
+
+        h3 {
+            font-size: 2.2rem;
+            min-width: 120px;
+
+            span {
+                opacity: 0.15;
+            }
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            svg {
+                font-size: 45px;
+                opacity: 0.15;
+            }
+
+            img {
+
+                //Jeśli chodzi tylko o wyświetlenie na formularzu do rejestracji to w ten sposób. Natomiast jeśli ma byc przesłane w 1/1 do dalszego użytku, to zastosowałbym coś takiego https://www.npmjs.com/package/react-image-crop aby klient mógł sobie odpowiednio wykadrować.
+
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: 0.3s all ease-in-out;
+
+                &:hover {
+                    transform: scale(2) rotate(360deg);
+                    border: 3px solid gray;
+                    border-radius: 1rem;
+
+                }
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        label,
+        select {
+            font-size: 1.2rem;
+
+        }
+
+
+        select {
+
+            height: 2rem;
+            margin-bottom: 0.7rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        label {
+            margin-bottom: 0.15rem;
+        }
+
+        input {
+            margin-bottom: 0.8rem;
+            height: 1.5rem;
+        }
+
+        input[type=file] {
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            button {
+                background-color: white;
+                color: black;
+            }
+
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            outline: none;
+            border: 0;
+            background-color: white;
+            color: black;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
