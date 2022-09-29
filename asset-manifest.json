@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/new-customers-form/static/css/main.b1438a35.css",
+    "main.js": "/new-customers-form/static/js/main.9b56d613.js",
+    "index.html": "/new-customers-form/index.html",
+    "main.b1438a35.css.map": "/new-customers-form/static/css/main.b1438a35.css.map",
+    "main.9b56d613.js.map": "/new-customers-form/static/js/main.9b56d613.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1438a35.css",
+    "static/js/main.9b56d613.js"
+  ]
+}
